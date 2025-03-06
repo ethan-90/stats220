@@ -9,14 +9,15 @@ A little about me:
 - I am interested in learning about Ways of thinking about to approach or process data.
 
 A meme that captures how I currently feel about my university studies is 
+
 ![](https://media1.tenor.com/m/w8kAoMlhgjQAAAAC/so-it-begins-raining.gif)
 
 # This is a header 
 
 ## This is another header but at a differenct level (Crazy) 
 
-* I like coffee
-* I also like Tea
+* I like *Coffee*
+* I also like *Tea*
 
 1. Now I can be even fancier and give my very important bullet points numbers!
 2. I like having buiscits with my coffee especially **Krispies**
