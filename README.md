@@ -19,4 +19,4 @@ A meme that captures how I currently feel about my university studies is
 * I also like Tea
 
 1. Now I can be even fancier and give my very important bullet points numbers!
-2. I like having buiscits with my coffee especially Krispies
+2. I like having buiscits with my coffee especially **Krispies**
