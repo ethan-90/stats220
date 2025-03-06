@@ -14,3 +14,9 @@ A meme that captures how I currently feel about my university studies is
 # This is a header 
 
 ## This is another header but at a differenct level (Crazy) 
+
+* I like coffee
+* I also like Tea
+
+  1. Now I can be even fancier and give my very important bullet points numbers!
+  2. I like having buiscits with my coffee especially Krispies
