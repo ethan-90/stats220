@@ -14,7 +14,7 @@ A meme that captures how I currently feel about my university studies is
 
 # This is a header 
 
-## This is another header but at a differenct level (Crazy) 
+## This is another header but at a differenct level (I know pretty epic!) 
 
 * I like *Coffee*
 * I also like *Tea*
