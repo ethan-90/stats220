@@ -24,4 +24,4 @@ A meme that captures how I currently feel about my university studies is
 
 Here is where you can buy yourself some [**Krispies**](https://www.woolworths.co.nz/shop/productdetails?stockcode=28514&store=9094&gad_source=1&gclid=CjwKCAiArKW-BhAzEiwAZhWsIBdT_2o2grQvTc-wHJ7ODXbelZjot6-kg3rIDoxR0K1G1cNWhEKFThoC_rwQAvD_BwE&gclsrc=aw.ds) so you too can have them with your Coffee!!
 
-![](https://c.tenor.com/NBD60Mp6n-QAAAAC/tenor.gif)
+![]([https://c.tenor.com/NBD60Mp6n-QAAAAC/tenor.gif](https://c.tenor.com/G8GNMUtWvOcAAAAC/tenor.gif))
