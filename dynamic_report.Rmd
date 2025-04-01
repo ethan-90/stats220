@@ -1,0 +1,62 @@
+---
+title: My dynamic report
+output: html_fragment
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE, error=FALSE)
+
+```
+
+```{css}
+
+```
+
+## Birds spotted around Tamaki Makaurau Auckland 
+Tamaki Makaurau Auckland has many different species of birds present around the city. They inhabit many areas varrying from parks to peoples gradens. This report looks to log some of that diversity and present it in 2 easily digestable, and colourful, bar charts. 
+
+```{r}
+library(tidyverse)
+library(magick)
+## Importing our CSV
+logged_data = read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTOEonK8ilXfFjpLMTf8cPizDb2dxFYK0E1Rz0ksfEI853XPSVR_cHIUxy15O1RdOcw0YydWk7CJsv4/pub?output=csv") %>%
+  rename(Species = 2, Bird_number = 3, Native_or_not = 4)
+
+## The total number of responses 
+Total_survey = length(logged_data$Species)
+
+## The total number of individual birds spotted within the survey
+Total_bird_number = sum(logged_data$Bird_number)
+
+```
+### Data about the survey itself
+- In total there were `r Total_bird_number ` birds spotted through out all of the responses to the survey.
+- In total to date there have been `r Total_survey ` responses to the survey. 
+
+### If you wish to fill out the survey yourself it can be found here:
+
+[*Click here*](https://docs.google.com/forms/d/e/1FAIpQLSeDvUddI-7dkcU234_B1SEd_XedrnOpzu0s8k3h5mwloJVbiA/viewform?usp=dialog)
+
+## Bar chart number 1:
+
+``` {r,fig.height=5,fig.width=7}
+
+## Plot to look at whether native birds are spotted non-native birds are spotted more often with colours filled as to what the bird type is allowing us to see the proportions that each type of birds were spotted.
+Bar_chart1 = ggplot(aes(x = Native_or_not, fill= Species), data= logged_data) +geom_bar() +
+            xlab("Nativness") +ylab("Number of times spotted") + 
+          scale_fill_manual(values = c("#89afc6","#99a1b3", "#d97960","#928c5b","#c6d365","#2c2c2c","#415227","#656462","#bc844c"))
+
+Bar_chart1
+
+```
+
+This chart compares the number of instances native species and non-native species were spotted. The colours filling in the bars represent the species of the bird spotted at that instance.
+
+``` {r,fig.height=5,fig.width=8.5}
+## Bar chart plotting out the different species spotted as compared to number of instances they were spotted in
+Bar_chart2 =ggplot(aes(x=Species, fill = Species), data = logged_data) + geom_bar()+
+            xlab("Type of bird") +ylab("Number of instances this species was spotted") + scale_fill_manual(values = c("#89afc6","#99a1b3", "#d97960","#928c5b","#c6d365","#2c2c2c","#415227","#656462","#bc844c"))
+Bar_chart2
+```
+
+This chart compares all the different types of birds that were spotted during the survey as compared to the number of instances that each of these birds were spotted in. Each species, or bird type, has a different colour for their bar. 
