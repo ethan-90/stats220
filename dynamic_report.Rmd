@@ -9,7 +9,17 @@ knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE, error=FALSE)
 ```
 
 ```{css}
+ body {
   font-family: 'Roboto Condensed';
+  background-color: #b0bf84;
+  font-size: 20px;
+}
+h2 {
+color: #7267aa;
+}
+h3 {
+color: #494078;
+}
 
 ```
 
