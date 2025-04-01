@@ -10,6 +10,7 @@ knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE, error=FALSE)
 
 ```{css}
   font-family: 'Roboto Condensed';
+
 ```
 
 ## Birds spotted around Tamaki Makaurau Auckland 
@@ -41,7 +42,7 @@ Total_bird_number = sum(logged_data$Bird_number)
 
 ``` {r,fig.height=5,fig.width=7}
 
-## Plot to look at whether native birds are spotted non-native birds are spotted more often with colours filled as to what the bird type is allowing us to see the proportions that each type of birds were spotted.
+## Plot to look at whether people know their native birds as compared to their non-native birds.The that colours fill the bars represent what the type of bird spotted was. 
 Bar_chart1 = ggplot(aes(x = Native_or_not, fill= Species), data= logged_data) +geom_bar() +
             xlab("Nativness") +ylab("Number of times spotted") + 
           scale_fill_manual(values = c("#89afc6","#99a1b3", "#d97960","#928c5b","#c6d365","#2c2c2c","#415227","#656462","#bc844c"))
@@ -50,7 +51,7 @@ Bar_chart1
 
 ```
 
-This chart compares the number of instances native species and non-native species were spotted. The colours filling in the bars represent the species of the bird spotted at that instance.
+This chart compares the number of instances that people place a bird into comparing the natives to non-natives and to those that people don't know which category the species belongs too. The colours filling out the bars show which species make up that count in each of the columns. 
 
 ``` {r,fig.height=5,fig.width=8.5}
 ## Bar chart plotting out the different species spotted as compared to number of instances they were spotted in
