@@ -41,8 +41,8 @@ Total_bird_number = sum(logged_data$Bird_number)
 
 ```
 ### Data about the survey itself
-- In total there were `r Total_bird_number ` birds spotted through out all of the responses to the survey.
-- In total to date there have been `r Total_survey ` responses to the survey. 
+- In total there were **`r Total_bird_number `** birds spotted through out all of the responses to the survey.
+- In total to date there have been **`r Total_survey `** responses to the survey. 
 
 ### If you wish to fill out the survey yourself it can be found here:
 
