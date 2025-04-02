@@ -61,7 +61,7 @@ Bar_chart1
 
 ```
 
-This chart compares the number of instances that people place a bird into comparing the natives to non-natives and to those that people don't know which category the species belongs too. The colours filling out the bars show which species make up that count in each of the columns. 
+This chart compares the number of instances that people place a bird into comparing the natives to non-natives and to those that people do not know which category the species belongs too. The colours filling out the bars show which species make up that count in each of the columns. 
 
 ``` {r,fig.height=5,fig.width=10}
 ## Bar chart plotting out the different species spotted as compared to number of instances they were spotted in
